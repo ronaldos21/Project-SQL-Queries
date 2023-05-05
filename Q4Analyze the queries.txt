@@ -1,0 +1,15 @@
+Here is a summary of what each query does:
+
+1.	Calculate Distance between points: 
+This query calculates the distance between earthquake locations in the "earthq" table and a single point using the Haversine formula. 
+The query uses a JOIN with a subquery to specify the coordinates of the second point.
+
+2.	Calculate Distance between points using JOINs: 
+This query is similar to the first query, but it uses a JOIN with a table that contains the coordinates of the second point instead of a subquery.
+
+3.	Calculate Areas of Interest: 
+This query groups the earthquakes in the "earthq" table by their location using the GROUP BY clause, and then calculates the total number of earthquakes and the average magnitude in each location using the COUNT and AVG aggregate functions. 
+The results are sorted by the number of earthquakes in each location.
+
+4.	Calculate Areas of Interest with filter: 
+This query is like the third query, but it adds a HAVING clause to filter the results to only include locations with a minimum number of earthquakes.
